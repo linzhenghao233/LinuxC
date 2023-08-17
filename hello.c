@@ -2,7 +2,14 @@
 #include <stdlib.h>
 
 int main(void) {
-    printf("Hello World!\n");
+	int* p = NULL;
+	int i;
 
-    exit(0);
+	p = malloc(sizeof(int));
+	if (p == NULL)
+		exit(1);
+
+	printf("Hello world!\n");
+
+		exit(0);
 }
